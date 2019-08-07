@@ -1,0 +1,29 @@
+$theme-color-1:#FBFFB9;
+$theme-color-2:#FDD692;
+$theme-color-3:#EC7357;
+$theme-color-4:#754F44;
+
+
+
+@mixin custom-input {
+    box-shadow: 0 0 15px 0 $theme-color-2;
+    background: transparent;
+    border: none;
+    color: $theme-color-1;
+}
+
+
+@keyframes spread {
+    from{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        opacity: 1;
+    }
+    to{
+        height: 200px;
+        width: 200px;
+        border-radius:100px;
+        opacity: 0;
+    }
+}

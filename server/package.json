@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node app.ts",
+    "db_init": "ts-node script/db_init.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.136",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.12.2",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "sequelize": "^5.11.0",
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.49",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.0.42",
+    "@types/koa-session": "^5.10.1",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}

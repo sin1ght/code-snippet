@@ -1,0 +1,74 @@
+@import './global.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+div,section,footer,header {
+    box-sizing: border-box;
+}
+
+
+//modal
+.ant-modal-content{
+    background: transparent;
+    box-shadow: 0 0 15px 0 $theme-color-2;
+
+    .ant-modal-header{
+        background: transparent;
+        border-bottom: 1px solid $theme-color-2;
+
+        .ant-modal-title{
+            color: $theme-color-1;
+        }
+    }
+
+    .ant-modal-body{
+        input{
+            @include custom-input;
+        }
+    }
+
+    .ant-modal-footer{
+        border-top: 1px solid $theme-color-2;
+
+        .ant-btn{
+            background: $theme-color-3;
+            border: none;
+            color: white;
+
+            &:hover{
+                color: white;
+            }
+        }
+
+        .ant-btn-primary{
+            background: $theme-color-2;
+        }
+    }
+}
+
+// markdown 的补充
+pre {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #abb2bf;
+    background: #282c34;
+}
+
+code:not([class^=language]){
+    color: #EC7357;
+}

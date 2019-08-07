@@ -1,0 +1,50 @@
+@import '../../global.scss';
+
+.snippets-view{
+    position: relative;
+    width: 65vw;
+    height: 70vh;
+    overflow-y:auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .snippet-card{
+        position: relative;
+        width: 150px;
+        height: 300px;
+        box-shadow: 0 0 10px 0 $theme-color-2;
+        margin-right: 20px; 
+        margin-bottom: 20px; 
+        cursor: pointer;
+        
+        .snippet-card-bg{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-position: center;
+            background-repeat:no-repeat; 
+            background-size:cover;
+            filter: brightness(0.6);
+            //box-shadow: 0 0 10px 0 $theme-color-2;
+        }
+
+        .info {
+            width: 100%;
+            min-height: 20%;
+            background: #4a5163b8;
+            position: absolute;
+            bottom: 0;
+            color: $theme-color-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
